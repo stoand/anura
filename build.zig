@@ -12,7 +12,7 @@ pub fn build(b: *std.Build) void {
     });
 
     const wasm_exe = b.addExecutable(.{
-        .name = "xflow-front",
+        .name = "anura-front",
         .root_source_file = b.path("src/front.zig"),
         .target = wasm_target,
         .optimize = .ReleaseSmall,
